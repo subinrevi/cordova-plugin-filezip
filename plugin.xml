@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-filezip" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>FileZip</name>
+    <js-module name="filezip" src="www/filezip.js">
+        <clobbers target="filezip" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="FileZipSwift">
+                <param name="ios-package" value="FileZipSwift" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/Archive.swift" />
+        <source-file src="src/ios/Archive+Reading.swift" />
+        <source-file src="src/ios/Archive+Writing.swift" />
+        <source-file src="src/ios/Data+Compression.swift" />
+        <source-file src="src/ios/Data+Serialization.swift" />
+        <source-file src="src/ios/Entry.swift" />
+        <source-file src="src/ios/FileManager+ZIP.swift" />
+        <source-file src="src/ios/FileZipSwift.swift" />
+    </platform>
+</plugin>

@@ -1,0 +1,16 @@
+{
+  "name": "filezipper",
+  "version": "1.0.0",
+  "description": "This is a plugin for Zipping files in iOS",
+  "main": "FileZipper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "FileZip",
+    "zip",
+    "zipfile"
+  ],
+  "author": "Subin Revi",
+  "license": "MIT"
+}
