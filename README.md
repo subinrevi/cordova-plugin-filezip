@@ -61,5 +61,16 @@ exports.copyFile = function(arg0,arg1, success, error) {
 };
 ```
                             
-     
+## Supported Platforms
+
+- iOS
+
+## References
+
+This plugin is built with "ZipFoundation" library for iOS. Please find the github link for the library below
+
+```
+https://github.com/weichsel/ZIPFoundation
+
+```
      
