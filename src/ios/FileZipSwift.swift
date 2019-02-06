@@ -28,7 +28,7 @@ import Foundation
         } catch {
             print("Creation of txt ZIP archive failed with error:\(error)")
         }
-        pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: destinationURL.path)
+        pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: destinationURL.lastPathComponent)
         
         self.commandDelegate!.send(
             pluginResult,
